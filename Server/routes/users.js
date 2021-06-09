@@ -104,7 +104,7 @@ router.put("/:id/follow",async (req,res)=>{
         });
     }
 });
-
+// unfollow a user
 router.put("/:id/unfollow",async (req,res)=>{
     if(req.params.id !== req.body.UserId){
         try {
